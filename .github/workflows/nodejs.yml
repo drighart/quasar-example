@@ -27,10 +27,11 @@ jobs:
       env:
         CI: true
     - name: Publish to Netlify
-      uses: netlify/actions/cli@master
-      args: deploy --dir=site --functions=functions
-      with:
-         NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+      uses: netlify/actions/build@master
+      env:
+        NETLIFY_BASE = "site"
+        NETLIFY_CMD = "quasar build -m pwa"
+        NETLIFY_DIR = "dist"
 
 #    - name: Publish to Registry
 #      uses: elgohr/Publish-Docker-Github-Action@master
