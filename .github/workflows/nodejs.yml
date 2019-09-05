@@ -29,9 +29,9 @@ jobs:
     - name: Publish to Netlify
       uses: netlify/actions/build@master
       env:
-        NETLIFY_BASE = "site"
-        NETLIFY_CMD = "quasar build -m pwa"
-        NETLIFY_DIR = "dist"
+        NETLIFY_BASE: quasar example
+        NETLIFY_CMD: quasar build -m pwa
+        NETLIFY_DIR: dist
 
 #    - name: Publish to Registry
 #      uses: elgohr/Publish-Docker-Github-Action@master
