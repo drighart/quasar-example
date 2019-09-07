@@ -28,7 +28,7 @@ jobs:
     - name: Publish to Netlify
       uses: netlify/actions/build@master
       env:
-        NETLIFY_BASE: quasar example
+        NETLIFY_BASE: quasar-example-2
         NETLIFY_CMD: quasar build -m pwa
         NETLIFY_DIR: dist
 
