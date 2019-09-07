@@ -23,7 +23,6 @@ jobs:
         npm install -g @quasar/cli
         npm run build --if-present
         quasar build -m pwa
-        ls -l
       env:
         CI: true
     - name: Publish to Netlify
