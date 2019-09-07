@@ -33,6 +33,7 @@ jobs:
         NETLIFY_CMD: quasar build -m pwa
         NETLIFY_DIR: dist
 
+
 #    - name: Publish to Registry
 #      uses: elgohr/Publish-Docker-Github-Action@master
 #      with:
