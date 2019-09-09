@@ -16,7 +16,7 @@
           Hello World!
         </q-toolbar-title>
 
-        <div>Quasar v{{ $q.version }}</div>
+        <div>MyApp v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
@@ -26,7 +26,7 @@
       content-class="bg-grey-2"
     >
       <q-list>
-        <q-item-label header>Essential LinkRechtss</q-item-label>
+        <q-item-label header>Essential</q-item-label>
         <q-item clickable tag="a" target="_blank" href="https://quasar.dev">
           <q-item-section avatar>
             <q-icon name="school" />
