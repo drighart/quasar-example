@@ -1,11 +1,12 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import VueOpenLayers from 'vue-openlayers'
+import VueLayers from 'vuelayers'
+import 'vuelayers/lib/style.css' // needs css-loader
 
 import routes from './routes'
 
 Vue.use(VueRouter)
-Vue.use(VueOpenLayers)
+Vue.use(VueLayers)
 
 /*
  * If not building with SSR mode, you can
