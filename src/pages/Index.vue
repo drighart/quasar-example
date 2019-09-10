@@ -1,6 +1,9 @@
+import { Platform } from 'quasar'
+
 <template>
   <q-page class="flex flex-center">
-    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
+    <q-badge color="primary">2019 {{ myInfiniteVariable }}-09</q-badge>
+    {{ $q.platform }}
   </q-page>
 </template>
 
@@ -9,6 +12,11 @@
 
 <script>
 export default {
-  name: 'PageIndex'
+  name: 'PageIndex',
+  data () {
+    return {
+      myInfiniteVariable: true
+    }
+  }
 }
 </script>

@@ -16,7 +16,7 @@
           Alliander - example app
         </q-toolbar-title>
 
-        <div>MyApp v{{ $q.version }}</div>
+        <div>MyApp v0.0.1</div>
       </q-toolbar>
     </q-header>
 
@@ -24,8 +24,6 @@
       v-model="leftDrawerOpen"
       bordered
       content-class="bg-maroon"
-      mini="True"
-      show-if-above
     >
       <q-list>
         <q-item-label header>Menu</q-item-label>
@@ -54,7 +52,7 @@ export default {
   name: 'MyLayout',
   data () {
     return {
-      leftDrawerOpen: this.$q.platform.is.desktop
+      leftDrawerOpen: false
     }
   },
   methods: {
