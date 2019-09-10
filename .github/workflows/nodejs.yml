@@ -23,14 +23,16 @@ jobs:
         npm install -g @quasar/cli
         npm run build --if-present
         quasar build -m pwa
+        ls -l
       env:
         CI: true
+        
     - name: Publish to Netlify
       uses: netlify/actions/build@master
       env:
         NETLIFY_BASE: quasar-example-2
         NETLIFY_CMD: quasar build -m pwa
-        NETLIFY_DIR: dist
+        NETLIFY_DIR: dist/pwa
 
 
 #    - name: Publish to Registry
