@@ -17,6 +17,11 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+
+    - name: Print env
+      run: |
+        env | sort
+
     - name: npm install, build, and test
       run: |
         npm install
@@ -33,6 +38,7 @@ jobs:
         BUILD_DIR: dist/pwa/
       with:
         GH_PAT: ${{ secrets.GH_PAT }}
+        GITHUB_REPOSITORY: drighart/quasar-example
 
 #    - name: Publish to Netlify
 #      uses: netlify/actions/build@master
