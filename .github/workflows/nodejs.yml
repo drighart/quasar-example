@@ -26,14 +26,20 @@ jobs:
         ls -l
       env:
         CI: true
-        
-    - name: Publish to Netlify
-      uses: netlify/actions/build@master
-      env:
-        NETLIFY_BASE: quasar-example-2
-        NETLIFY_CMD: quasar build -m pwa
-        NETLIFY_DIR: dist/pwa
 
+    - name: Publish to Github Pages
+      uses: maxheld83/ghpages@v0.2.1
+      env:
+        BUILD_DIR: dist/pwa/
+      with:
+        GH_PAT: ${{ secrets.GH_PAT }}
+
+#    - name: Publish to Netlify
+#      uses: netlify/actions/build@master
+#      env:
+#        NETLIFY_BASE: quasar-example-2
+#        NETLIFY_CMD: quasar build -m pwa
+#        NETLIFY_DIR: dist/pwa
 
 #    - name: Publish to Registry
 #      uses: elgohr/Publish-Docker-Github-Action@master
