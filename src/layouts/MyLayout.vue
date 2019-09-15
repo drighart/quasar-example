@@ -13,10 +13,10 @@
         </q-btn>
 
         <q-toolbar-title>
-          Alliander - example app
+          Liander - example app
         </q-toolbar-title>
 
-        <div>MyApp v0.0.1</div>
+        <div>v0.0.1</div>
       </q-toolbar>
     </q-header>
 
@@ -27,13 +27,22 @@
     >
       <q-list>
         <q-item-label header>Menu</q-item-label>
-        <q-item clickable tag="a" target="_blank" href="https://www.alliander.com">
+        <q-item clickable tag="a" target="_blank" href="https://www.liander.nl">
           <q-item-section avatar>
             <q-icon name="dashboard" />
           </q-item-section>
           <q-item-section>
-            <q-item-label>Alliander</q-item-label>
-            <q-item-label caption>https://www.alliander.com</q-item-label>
+            <q-item-label>Liander</q-item-label>
+            <q-item-label caption>https://www.liander.nl</q-item-label>
+          </q-item-section>
+        </q-item>
+        <q-item clickable tag="a" target="_blank" href="https://www.liander.nl">
+          <q-item-section avatar>
+            <q-icon name="help" />
+          </q-item-section>
+          <q-item-section>
+            <q-item-label>Over deze app</q-item-label>
+            <q-item-label caption>https://www.liander.nl</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
