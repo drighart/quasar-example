@@ -1,8 +1,8 @@
 {
-  "name": "quasar-example-app",
+  "name": "Liander app",
   "version": "0.0.1",
-  "description": "An Alliander app",
-  "productName": "Alliander App",
+  "description": "Liander app",
+  "productName": "Liander App",
   "cordovaId": "org.cordova.quasar.app",
   "author": "David Righart <david.righart@gmail.com>",
   "private": true,
