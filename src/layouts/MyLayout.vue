@@ -42,7 +42,7 @@
           </q-item-section>
           <q-item-section>
             <q-item-label>Over deze app</q-item-label>
-            <q-item-label caption>https://www.liander.nl</q-item-label>
+            <q-item-label caption>Wat doet deze app en hoe gaan we om met betrekking tot privacy van uw data?</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>
