@@ -32,6 +32,7 @@
       <br />
       My geolocation: {{ geolocPosition }}
     </div>
+    <q-btn color="primary" icon="" label="Terug" to="/"/>
   </div>
 </template>
 
@@ -39,8 +40,8 @@
 export default {
   data () {
     return {
-      zoom: 2,
-      center: [0, 0],
+      zoom: 12,
+      center: [5.4717, 51.5240],
       rotation: 0,
       geolocPosition: undefined
     }
