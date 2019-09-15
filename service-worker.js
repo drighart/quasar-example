@@ -14,10 +14,10 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.275b4cc39dfc77d016cebf825d38b3b2.js"
+  "precache-manifest.9b9a7b441d14d46497904ca651e20467.js"
 );
 
-workbox.core.setCacheNameDetails({prefix: "quasar-example-app"});
+workbox.core.setCacheNameDetails({prefix: "liander-app"});
 
 self.addEventListener('message', (event) => {
   if (event.data && event.data.type === 'SKIP_WAITING') {
