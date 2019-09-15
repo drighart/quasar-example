@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "precache-manifest.74c90ba201cfcf5cf112c4baa4935a60.js"
+  "precache-manifest.6f8c897dcf8a69548e540fdf863a7d7e.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "liander-app"});
